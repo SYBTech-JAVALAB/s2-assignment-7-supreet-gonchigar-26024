@@ -1,0 +1,27 @@
+Program:-
+class EvenThread extends Thread {
+public void run() {
+for (int i=0; i < 10; i++) {
+if (i%20) {
+System.out.println("Even: " + i);
+}
+}
+}
+}
+class Odd Thread extends Thread {
+public void run() {
+for (int i=0; i < 10; i++) {
+if (i % 2 10) {
+System.out.println("Odd: "+i);
+}
+}
+}
+}
+public class ThreadExample {
+public static void main(String[] args) {
+Even Thread t1 =new EvenThread();
+OddThread t2 new OddThread();
+t1.start();
+t2.start();
+}
+}
